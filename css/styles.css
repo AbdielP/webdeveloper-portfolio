@@ -13,9 +13,12 @@ font-family: 'Fraunces', serif; */
     --color-main: hsl(206, 5%, 29%);
     --color-main-light: hsla(206, 5%, 29%, 30%);
     /* #474b4e */
+    --header-height: 50px;
 }
 
 body {
+    width: 100%;
+    height: 100vh;
     background: #E3EAFF;
     font-size: var(--font-fraunces);
     /* font-size: 12px; */
