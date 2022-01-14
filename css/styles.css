@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;600;700&family=Fraunces:wght@400;600;700&display=swap');
+
+/* font-family: 'Commissioner', sans-serif;
+font-family: 'Fraunces', serif; */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    --font-comissioner: 'Commissioner', sans-serif;
+    --font-fraunces: 'Fraunces', serif;
+    --color-main: hsl(225, 12%, 41%);
+    --color-main-light: hsla(225, 12%, 41%, 30%);
+
+}
+
+body {
+    background: #E3EAFF;
+    font-size: var(--font-fraunces);
+    /* font-size: 12px; */
+    font-size: 12px;
+    color: var(--color-main);
+}
+
+.display-flex {
+    display: flex;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
