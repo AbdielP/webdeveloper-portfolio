@@ -22,8 +22,8 @@
 }
 
 .link__img {
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     margin-left: 2px;
     filter: invert(38%) sepia(26%) saturate(321%) hue-rotate(187deg) brightness(90%) contrast(83%);
 }
@@ -32,12 +32,15 @@
     margin-bottom: 5px;
 }
 
-@media (min-width: 600px) {
-    .footer, .link__img {
-        font-size: 1.1vw;
-    }
+@media (min-width: 1300px) {
     .footer {
+        font-size: .85vw;
         flex-direction: row;
+    }
+
+    .link__img {
+        width: .8vw;
+        height: .8vw;
     }
 
     .p__contact {

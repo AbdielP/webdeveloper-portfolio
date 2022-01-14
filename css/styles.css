@@ -10,9 +10,9 @@ font-family: 'Fraunces', serif; */
 
     --font-comissioner: 'Commissioner', sans-serif;
     --font-fraunces: 'Fraunces', serif;
-    --color-main: hsl(225, 12%, 41%);
-    --color-main-light: hsla(225, 12%, 41%, 30%);
-
+    --color-main: hsl(206, 5%, 29%);
+    --color-main-light: hsla(206, 5%, 29%, 30%);
+    /* #474b4e */
 }
 
 body {
