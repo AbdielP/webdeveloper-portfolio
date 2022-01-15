@@ -1,4 +1,114 @@
 .main {
     width: 100%;
     height: calc(100% - var(--header-height));
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px auto;
 }
+
+.presentation, .mywork {
+    padding: 25px;
+}
+
+.presentation {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.h1 {
+    font-size: 13px;
+    font-family: var(--font-comissioner);
+    letter-spacing: 2px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.paragraph__presentation {
+    color: var(--color-main-light);
+    font-size: inherit;
+    letter-spacing: 1.3px;
+    max-width: 450px;
+}
+
+.link__aboutme {
+    margin-top: 10px;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-test3);
+}.img__arrow {
+    margin-left: 12px;
+    filter: invert(25%) sepia(3%) saturate(960%) hue-rotate(163deg) brightness(102%) contrast(84%);
+}
+
+.div__vscodelike {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 350px;
+    margin-left: 20px;
+    border-radius: 5px;
+    background: #d8def2;
+    padding: 10px;
+    color: var(--color-main-light);
+}
+
+.quotation {
+    quotes: "\201C""\201D""\2018""\2019";
+    padding: 10px 20px;
+    line-height: 1.4;
+}
+
+.quotation:before {
+    content: open-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: -10px;
+    position: relative;
+    top: 15px;
+    color: var(--color-secondary);
+    font-size: 2.3em;
+  }
+  .quotation::after {
+    content: close-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: 10px;
+    position: relative;
+    top: 15px;
+    color: var(--color-secondary);
+    font-size: 2.3em;
+  }
+
+  
+.mywork {
+    background: goldenrod;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.mywork__container {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.card {
+    background: gainsboro;
+    border: 1px solid #fff;
+}
+
+.h2 {
+    font-family: var(--font-comissioner);
+}
+
+
+  @media (min-width: 360px) { 
+      .h1 {
+          font-size: 20px;
+      }
+
+      .paragraph__presentation {
+          font-size: 16px;
+      }
+  }

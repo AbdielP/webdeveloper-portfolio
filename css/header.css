@@ -17,6 +17,7 @@
 }
 
 .title {
+    color: var(--color-main-dark);
     font-family: var(--font-comissioner);
     font-weight: 700;
     font-size: 15px;
@@ -24,6 +25,7 @@
 }
 
 .subtitle {
+    color: var(--color-main-light);
     font-family: var(--font-comissioner);
     letter-spacing: 1.4px;
     font-size: 14px;

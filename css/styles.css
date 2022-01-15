@@ -10,8 +10,16 @@ font-family: 'Fraunces', serif; */
 
     --font-comissioner: 'Commissioner', sans-serif;
     --font-fraunces: 'Fraunces', serif;
+    --color-background: #E3EAFF;
     --color-main: hsl(206, 5%, 29%);
-    --color-main-light: hsla(206, 5%, 29%, 30%);
+    --color-main-dark: hsl(225, 3%, 25%);
+    --color-main-light: hsla(206, 5%, 29%, 60%);
+    --color-secondary: #8de2c7;
+
+    --color-test1: #5B6775;
+    --color-test2: #B12A1C;
+    --color-test3: #E6AD38;
+
     /* #474b4e */
     --header-height: 50px;
 }
@@ -19,8 +27,8 @@ font-family: 'Fraunces', serif; */
 body {
     width: 100%;
     height: 100vh;
-    background: #E3EAFF;
-    font-size: var(--font-fraunces);
+    background: var(--color-background);
+    font-family: var(--font-fraunces);
     /* font-size: 12px; */
     font-size: 12px;
     color: var(--color-main);
@@ -32,5 +40,9 @@ body {
 
 .cursor-pointer {
     cursor: pointer;
+}
+
+.color-secondary {
+    color: var(--color-secondary);
 }
 
