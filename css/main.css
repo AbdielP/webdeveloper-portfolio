@@ -30,17 +30,21 @@
     max-width: 450px;
 }
 
-.link__aboutme {
-    margin-top: 10px;
+.link__info {
     align-items: center;
     text-decoration: none;
-    color: var(--color-test3);
+    letter-spacing: 1.8px;
+    color: var(--color-alternative-red);
 }.img__arrow {
     margin-left: 12px;
     filter: invert(25%) sepia(3%) saturate(960%) hue-rotate(163deg) brightness(102%) contrast(84%);
 }
 
-.div__vscodelike {
+.link__info--mt10 {
+    margin-top: 10px;
+}
+
+/* .div__vscodelike {
     margin: 0 auto;
     width: 100%;
     max-width: 350px;
@@ -49,7 +53,7 @@
     background: #d8def2;
     padding: 10px;
     color: var(--color-main-light);
-}
+} */
 
 .quotation {
     quotes: "\201C""\201D""\2018""\2019";
@@ -106,9 +110,11 @@
 }
 
 .card {
+    flex-direction: column;
     overflow: hidden;
     border-radius: 2px;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
+    background: var(--color-secondary);
 }
 
 .card__img {
@@ -117,21 +123,76 @@
     object-fit: cover;
 }
 
+/* .div__links {
+    width: 100%;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+} */
+
+/* .test {
+
+    align-items: center;
+    justify-content: center;
+    color: var(--color-main-dark);
+    font-family: var(--font-comissioner);
+} */
+
+.link__icons {
+    margin-right: 4px;
+    width: 11px;
+    height: 11px;
+    filter: invert(25%) sepia(3%) saturate(960%) hue-rotate(163deg) brightness(102%) contrast(84%);
+    /* filter: invert(82%) sepia(33%) saturate(391%) hue-rotate(196deg) brightness(106%) contrast(103%); */
+    /* filter: invert(65%) sepia(96%) saturate(338%) hue-rotate(357deg) brightness(93%) contrast(93%); */
+}
+
 .h2 {
+    letter-spacing: 1.8px;
     font-family: var(--font-comissioner);
 }
 
+.mywork__paragraph {
+    letter-spacing: 1.8px;
+}
 
-  @media (min-width: 360px) { 
-      .h1 {
-          font-size: 20px;
-      }
 
-      .paragraph__presentation {
-          font-size: 16px;
-      }
+@media (min-width: 360px) { 
+    .h1 {
+        font-size: 20px;
+    }
 
-      .mywork__container {
+    .paragraph__presentation {
+        font-size: 16px;
+    }
+
+    .mywork__container {
         grid-template-columns: 1fr 1fr;
-      }
-  }
+        grid-template-rows: auto;
+    }
+}
+
+@media (min-width: 700px) {
+
+    .mywork {
+        background: turquoise;
+    }
+
+    .mywork__container {
+        background: red;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 950px) {
+    .main {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+    }
+
+    .mywork__container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+}
