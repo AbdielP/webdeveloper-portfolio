@@ -82,20 +82,39 @@
 
   
 .mywork {
-    background: goldenrod;
+    /* background: goldenrod; */
     flex-direction: column;
     align-items: flex-end;
 }
 
 .mywork__container {
+    width: 100%;
+    height: 100%;
+    margin: 15px 0;
+    padding: 8px;
+    border-radius: 5px;
+    
     display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 5px;
+}
+
+.mywork__hr {
+    margin-top: 3px;
+    width: 90%;
 }
 
 .card {
-    background: gainsboro;
+    overflow: hidden;
+    border-radius: 2px;
     border: 1px solid #fff;
+}
+
+.card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .h2 {
@@ -110,5 +129,9 @@
 
       .paragraph__presentation {
           font-size: 16px;
+      }
+
+      .mywork__container {
+        grid-template-columns: 1fr 1fr;
       }
   }
