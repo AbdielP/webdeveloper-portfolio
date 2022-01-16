@@ -162,6 +162,10 @@
 }
 
 @media (min-width: 610px) {
+    .paragraph__presentation {  
+        max-width: none;
+    }
+
   .card {
     max-height: 30vw;
     box-shadow: -3px 4px 12px 1px rgba(0, 0, 0, 0.1);
@@ -171,6 +175,25 @@
 }
 
 @media (min-width: 950px) {
+
+    .presentation {
+        padding: 2vw;
+    }
+    .h1 {
+        font-size: 1.3vw;
+    }
+    .paragraph__presentation {
+        font-size: 1.1vw;
+    }
+
+    .link__info {
+        font-size: .8vw;
+    }
+
+    .img__arrow {
+        width: 2vw;
+    }
+
   .main {
     grid-template-columns: 1fr 1.5fr;
     grid-template-rows: auto;
@@ -186,6 +209,6 @@
 
   .card {
     /* height: 160px; */
-    height: 11vw;
+    height: 14vw;
   }
 }
