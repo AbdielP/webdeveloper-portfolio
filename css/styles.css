@@ -19,6 +19,7 @@
 
     /* #474b4e */
     --header-height: 50px;
+    --header-height-desktop: 3vw;
 }
 
 body {

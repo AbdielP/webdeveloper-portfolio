@@ -91,7 +91,7 @@
     }
 
     .header {
-        height: 3vw;
+        height: var(--header-height-desktop);
     }
 
     .nav {

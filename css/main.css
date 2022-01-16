@@ -177,7 +177,7 @@
 @media (min-width: 950px) {
 
     .presentation {
-        padding: 2vw;
+        padding: .5vw 2vw;
     }
     .h1 {
         font-size: 1.3vw;
@@ -195,8 +195,13 @@
     }
 
   .main {
+    height: calc(100% - var(--header-height-desktop));
     grid-template-columns: 1fr 1.5fr;
     grid-template-rows: auto;
+  }
+
+  .mywork {
+      padding: none;
   }
 
   .mywork__container {
@@ -208,7 +213,7 @@
   }
 
   .card {
-    /* height: 160px; */
-    height: 14vw;
+    height: 160px;
+    /* height: 14vw; */
   }
 }

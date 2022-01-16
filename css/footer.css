@@ -5,7 +5,7 @@
     height: 20px;
     flex-direction: column-reverse;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     font-size: 10px;
     padding: 20px;
 }
@@ -32,15 +32,21 @@
     margin-bottom: 5px;
 }
 
+.hr__footer {
+    width: 100%;
+}
+
 @media (min-width: 1300px) {
     .footer {
-        font-size: .85vw;
+        padding: 1.2vw;
+        font-size: .75vw;
         flex-direction: row;
     }
 
     .link__img {
-        width: .8vw;
-        height: .8vw;
+        width: 1.2vw;
+        height: 1.2vw;
+        margin-left: .7vw;
     }
 
     .p__contact {
