@@ -112,9 +112,8 @@
 .card {
     flex-direction: column;
     overflow: hidden;
-    /* border-radius: 2px; */
+    border-radius: 2px;
     /* border: 1px solid #fff; */
-    background: var(--color-secondary);
 }
 
 .card__img {
@@ -122,22 +121,6 @@
     height: 100%;
     object-fit: cover;
 }
-
-/* .div__links {
-    width: 100%;
-    padding: 5px;
-    align-items: center;
-    justify-content: space-between;
-    text-decoration: none;
-} */
-
-/* .test {
-
-    align-items: center;
-    justify-content: center;
-    color: var(--color-main-dark);
-    font-family: var(--font-comissioner);
-} */
 
 .link__icons {
     margin-right: 4px;
