@@ -156,7 +156,7 @@
   }
 
   .mywork__container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2,1fr);
     grid-template-rows: auto;
   }
 }
@@ -180,18 +180,18 @@
         padding: .5vw 2vw;
     }
     .h1 {
-        font-size: 1.3vw;
+        font-size: 1vw;
     }
     .paragraph__presentation {
-        font-size: 1.1vw;
+        font-size: .9vw;
     }
 
     .link__info {
-        font-size: .8vw;
+        font-size: .7vw;
     }
 
     .img__arrow {
-        width: 2vw;
+        width: 1.8vw;
     }
 
   .main {
@@ -202,18 +202,24 @@
 
   .mywork {
       padding: none;
+      background: forestgreen;
   }
 
   .mywork__container {
-    grid-template-columns: 1fr 1fr 1fr;
+    
+    background: firebrick;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    /* max-width: 600px; */
-    /* max-height: 400px; */
+    width: 65%;
+    height: 60%;
     gap: 10px;
   }
 
   .card {
-    height: 160px;
+      /* border: 1px solid #fff; */
+      width: 100%;
+      height: 100%;
+    /* height: 160px; */
     /* height: 14vw; */
   }
 }
