@@ -113,6 +113,9 @@
     flex-direction: column;
     overflow: hidden;
     border-radius: 2px;
+    max-height: 160px;
+    /* width: 40vw; */
+    /* height: 35vw; */
     /* border: 1px solid #fff; */
 }
 
@@ -156,7 +159,11 @@
     }
 }
 
-@media (min-width: 700px) {}
+@media (min-width: 610px) {
+    .card {
+        max-height: 30vw;
+    }
+}
 
 @media (min-width: 950px) {
     .main {
@@ -167,8 +174,13 @@
     .mywork__container {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
-        max-width: 600px;
-        max-height: 400px;
+        /* max-width: 600px; */
+        /* max-height: 400px; */
         gap: 10px;
+    }
+
+    .card {
+        /* height: 160px; */
+        height: 11vw;
     }
 }
