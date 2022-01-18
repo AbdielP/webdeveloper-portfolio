@@ -157,3 +157,21 @@
     width: 50px;
     height: 60px;
 }
+
+
+@media (min-width: 600px) {
+    /* botomm pa la izquierda */
+    .section__lower {
+        grid-template-columns: .5fr 2fr;
+        grid-template-rows: 1fr;
+    }
+
+    .container__techs {
+        order: 1;
+    }
+
+    .bro {
+        order: 2;
+    }
+
+}

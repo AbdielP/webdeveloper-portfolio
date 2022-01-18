@@ -35,6 +35,10 @@ body {
     display: flex;
 }
 
+.flex-column {
+    flex-direction: column;
+}
+
 .cursor-pointer {
     cursor: pointer;
 }
