@@ -216,8 +216,8 @@
 
     .div__preview {
         overflow: hidden;
-        width: 400px;
-        height: 400px;
+        width: 35vw;
+        height: 20vw;
     }
 
     .container__img {
@@ -232,7 +232,7 @@
 
     .img__preview--desktop {
         display: inline;
-        object-fit: cover;
+        object-fit: contain;
         height: 100%;
     }
 
@@ -240,12 +240,31 @@
         border-bottom: 2px solid #fff;
     }
 
+    .container__info {
+        padding: 0 3vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1vw;
+    }
+
+    .h4 {
+        font-size: 1.5vw;
+    }
+
     .img__preview {
         /* object-fit: cover; */
         display: none;
     }
 
+    .container__links {
+        padding: 0;
+        justify-content: flex-start;
+    }
+
     .btn__project {
+        margin-left: 4vw;
         font-size: 1vw;
     }
 
@@ -255,17 +274,13 @@
 
     .container__techs {
         justify-content: flex-start;
-        padding: .8vw;
+        padding: .45vw;
     }
 
     .img__techs {
-        width: 3vw;
-        height: 3.2vw;
-        margin: 0 1vw;
-    }
-
-    .test {
-        background-color: firebrick;
+        width: 2vw;
+        height: 2.2vw;
+        margin: 0 .3vw;
     }
 
 
