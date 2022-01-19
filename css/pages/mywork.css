@@ -1,6 +1,8 @@
 .main {
   width: 100%;
   height: 100vh;
+  max-width: 1920px;
+  margin: auto;
 }
 
 .section {
@@ -119,8 +121,13 @@
     justify-content: space-between;
 }
 
-.img__preview {
+.img__preview,
+.img__preview--desktop {
     width: 100%;
+}
+
+.img__preview--desktop {
+    display: none;
 }
 
 .arrow {
@@ -161,17 +168,105 @@
 
 @media (min-width: 600px) {
     /* botomm pa la izquierda */
-    .section__lower {
+    /* .section__lower {
         grid-template-columns: .5fr 2fr;
         grid-template-rows: 1fr;
+    } */
+
+    .container__info {
+        padding: 5vw;
     }
 
-    .container__techs {
+    /* .container__techs {
+        flex-direction: column;
         order: 1;
     }
 
-    .bro {
+    .container--order {
         order: 2;
+    } */
+
+    .div__container_images {
+        padding: 15px;
     }
+
+    .div__preview {
+        height: 300px;
+    }
+
+    .btn__project {
+        font-size: 2vw;
+    }
+
+    .container__techs {
+        padding: 30px;
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+   
+    .container__resize {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: 1fr;
+        height: auto;
+    }
+
+    .div__preview {
+        overflow: hidden;
+        width: 400px;
+        height: 400px;
+    }
+
+    .container__img {
+        height: auto;
+    }
+
+    .img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .img__preview--desktop {
+        display: inline;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .container__title {
+        border-bottom: 2px solid #fff;
+    }
+
+    .img__preview {
+        /* object-fit: cover; */
+        display: none;
+    }
+
+    .btn__project {
+        font-size: 1vw;
+    }
+
+    .arrow {
+        width: 1.8vw;
+    }
+
+    .container__techs {
+        justify-content: flex-start;
+        padding: .8vw;
+    }
+
+    .img__techs {
+        width: 3vw;
+        height: 3.2vw;
+        margin: 0 1vw;
+    }
+
+    .test {
+        background-color: firebrick;
+    }
+
 
 }
