@@ -15,14 +15,13 @@
         },
         events: {
             showProjects: (projects) => {
-                projects.forEach(project => {
-                    console.log(project.desktop_img)
+                projects.forEach((project, index, arr) => {
                     App.htmlElements.myworkContainer.innerHTML +=
-                        `<div class="card cursor-pointer">
-                            <a href="pages/mywork.html">
-                                <img class="card__img" src="assets/img/${project.desktop_img}" alt="room homepage website">
-                            </a>
-                        </div>`
+                    `<div class="card cursor-pointer">
+                        <a href="pages/mywork.html?project=${index}">
+                            <img class="card__img" src="assets/img/${project.desktop_img}" alt="room homepage website">
+                        </a>
+                    </div>`;
                 });
             }
         },
