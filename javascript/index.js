@@ -1,6 +1,8 @@
 (() => {
     const App = {
-        htmlElements: {},
+        htmlElements: {
+            myworkContainer: document.getElementById('mywork_container')
+        },
         init: () => {
             App.initializeData.projects();
         },
@@ -8,7 +10,20 @@
             projects: async () => {
                 const data = await App.utils.getProjects();
                 const projects = data.projects;
-                console.log(projects);
+                App.events.showProjects(projects);
+            }
+        },
+        events: {
+            showProjects: (projects) => {
+                projects.forEach(project => {
+                    console.log(project.desktop_img)
+                    App.htmlElements.myworkContainer.innerHTML +=
+                        `<div class="card cursor-pointer">
+                            <a href="pages/mywork.html">
+                                <img class="card__img" src="assets/img/${project.desktop_img}" alt="room homepage website">
+                            </a>
+                        </div>`
+                });
             }
         },
         utils: {

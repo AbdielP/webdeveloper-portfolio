@@ -1,6 +1,6 @@
 {
-    "projects" : {
-        "room" : {
+    "projects" : [
+        {
             "desktop_img": "room_homepage.png",
             "mobile_img": "room_homepage_mobile.png",
             "title": "Room Homepage",
@@ -10,6 +10,17 @@
             "built" : [ "Vue CLI V3@", "Html 5", "CSS3" ],
             "info" : "A single page app built on html5, CSS and Vue. It has a dynamic image gallery and an adaptable design to mobile devices.",
             "logos": ["vue.png", "html5.png", "css3.png"]
+        },
+        {
+            "desktop_img": "ecommerce.png",
+            "mobile_img": "ecommerce_mobile.png",
+            "title": "E-commerce product page",
+            "description" : "In this challenge, you'll build a beautiful product page. We'll be putting your JS skills to the test with a lightbox product gallery and cart functionality!.",
+            "live_site" : "https://abdielp.github.io/angular-ecommerce-product-page/",
+            "github" : "https://github.com/AbdielP/angular-ecommerce-product-page",
+            "built" : [ "Angular", "Angular Material", "Html 5", "CSS3" ],
+            "info" : "A single page app built on html5, CSS and Vue. It has a dynamic image gallery and an adaptable design to mobile devices.",
+            "logos": ["angular.png", "html5.png", "css3.png"]
         }
-    }
+    ]
 }
