@@ -1,0 +1,15 @@
+{
+    "projects" : {
+        "room" : {
+            "desktop_img": "room_homepage.png",
+            "mobile_img": "room_homepage_mobile.png",
+            "title": "Room Homepage",
+            "description" : "This small homepage challenge packs a big punch to test your layout skills. There's also a slider in there to add a JS layer for extra practice.",
+            "live_site" : "https://abdielp.github.io/vue-room-homepage/",
+            "github" : "https://github.com/AbdielP/vue-room-homepage",
+            "built" : [ "Vue CLI V3@", "Html 5", "CSS3" ],
+            "info" : "A single page app built on html5, CSS and Vue. It has a dynamic image gallery and an adaptable design to mobile devices.",
+            "logos": ["vue.png", "html5.png", "css3.png"]
+        }
+    }
+}
