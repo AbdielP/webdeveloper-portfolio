@@ -4,7 +4,11 @@
             projectIndex: null
         },
         htmlElements: {
-            containerImg: document.getElementById('container_img')
+            paragraphInfo: document.getElementById('paragraph_info'),
+            linkGithub: document.getElementById('link_github'),
+            linkLive: document.getElementById('link_live'),
+            title: document.getElementById('title'),
+            img: document.getElementById('img')
         },
         init: () => {
             App.initializeData.params();
@@ -24,9 +28,11 @@
         },
         events: {
             displayHTML: ({desktop_img, mobile_img, title, description, live_site, github, built, info, logos}) => {
-                App.htmlElements.containerImg.innerHTML += 
-                `<img class="img" src="../assets/img/${desktop_img}" alt="Website example">`
-
+                App.htmlElements.img.src = `../assets/img/${desktop_img}`;
+                App.htmlElements.paragraphInfo.textContent = description;
+                App.htmlElements.title.textContent = title;
+                App.htmlElements.linkLive.href = live_site;
+                App.htmlElements.linkGithub.href = github;
             }
         }
     }
