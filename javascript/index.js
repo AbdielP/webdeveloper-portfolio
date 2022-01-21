@@ -8,7 +8,7 @@
         },
         initializeData: {
             projects: async () => {
-                const data = await App.utils.getProjects();
+                const data = await Service.getProjects('./data.json')
                 const projects = data.projects;
                 App.events.showProjects(projects);
             }
@@ -23,16 +23,6 @@
                         </a>
                     </div>`;
                 });
-            }
-        },
-        utils: {
-            getProjects: async () => {
-                try {
-                    const response = await fetch('./data.json');
-                    return response.json();
-                } catch (error) {
-                    throw new Error(`Error: ${error}`);
-                }
             }
         }
     }
