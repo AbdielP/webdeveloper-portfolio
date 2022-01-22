@@ -28,13 +28,6 @@
     filter: invert(38%) sepia(26%) saturate(321%) hue-rotate(187deg) brightness(90%) contrast(83%);
 }
 
-.p__contact {
-    margin-bottom: 5px;
-}
-
-.hr__footer {
-    width: 100%;
-}
 
 @media (min-width: 1300px) {
     .footer {
@@ -47,9 +40,5 @@
         width: 1.2vw;
         height: 1.2vw;
         margin-left: .7vw;
-    }
-
-    .p__contact {
-        margin: 0 5px;
     }
 }
