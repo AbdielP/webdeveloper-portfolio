@@ -23,7 +23,7 @@
             "logos": ["angular.png", "html5.png", "css3.png"]
         },
         {
-            "desktop_img": "ipaddress.png",
+            "desktop_img": "desktop-preview.jpg",
             "mobile_img": "ipaddress_mobile.jpg",
             "title": "IP address tracker",
             "description" : "In this challenge, you'll be using two separate APIs together to create an IP Address Tracking app.",
