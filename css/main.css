@@ -115,6 +115,12 @@
   overflow: hidden;
   border-radius: 2px;
   max-height: 160px;
+  transition: 0.3s ease-in-out;
+}.card:hover {
+  transform: scale(1.04);
+  border-right: 2px solid var(--color-secondary);
+  border-left: 2px solid var(--color-secondary);
+  box-shadow: none;
 }
 
 .card__img {
@@ -145,6 +151,7 @@
   .mywork__container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
+    height: auto;
   }
 }
 
@@ -189,8 +196,9 @@
   .mywork__container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    width: 70%;
     height: auto;
+    width: 70%;
+    gap: 6px;
   }
 
   .card {
