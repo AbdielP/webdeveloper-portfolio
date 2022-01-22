@@ -9,6 +9,7 @@
             imgPreviewDesktop: document.getElementById('img_preview_desktop'),
             containerTechs: document.getElementById('container_techs'),
             paragraphInfo: document.getElementById('paragraph_info'),
+            containerImg: document.getElementById('container_img'),
             linkGithub: document.getElementById('link_github'),
             imgPreview: document.getElementById('img_preview'),
             linkLive: document.getElementById('link_live'),
@@ -17,7 +18,7 @@
             title: document.getElementById('title'),
             list: document.getElementById('list'),
             info: document.getElementById('info'),
-            img: document.getElementById('img')
+            // img: document.getElementById('img')
         },
         init: () => {
             App.bindEvents();
@@ -47,7 +48,8 @@
         },
         events: {
             displayHTML: ({ desktop_img, mobile_img, title, description, live_site, github, built, info, logos }) => {
-                App.htmlElements.img.src = `../assets/img/${desktop_img}`;
+                // App.htmlElements.img.src = `../assets/img/${desktop_img}`;
+                App.htmlElements.containerImg.style.backgroundImage = `url(../assets/img/${desktop_img})`
                 App.htmlElements.paragraphInfo.textContent = description;
                 App.htmlElements.imgPreviewDesktop.src = `../assets/img/${desktop_img}`;
                 App.htmlElements.title.textContent = title;
@@ -63,7 +65,6 @@
                 logos.forEach(logo => {
                     App.htmlElements.containerTechs.innerHTML += 
                     `<img class="img__techs" src="../assets/img/${logo}" alt="web tech logo">`
-                    // `<img class="img__techs" src="../assets/img/${logo}" alt="web tech logo">` FALTA ESTA PARA DESKTOPS...  Y CORREGIR LA IMG de Huddle (es gigante)
                 })
             }
         },

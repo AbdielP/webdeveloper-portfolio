@@ -221,7 +221,11 @@
     }
 
     .container__img {
+        /* height: 25vw; */
         height: auto;
+        /* background-image: url('../../assets/img/landing_page.png'); */
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .img {
