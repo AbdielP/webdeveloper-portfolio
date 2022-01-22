@@ -6,14 +6,14 @@
             counter: 0
         },
         htmlElements: {
-            btnPrev: document.getElementById('btn_prev'),
-            btnNext: document.getElementById('btn_next'),
             imgPreviewDesktop: document.getElementById('img_preview_desktop'),
             containerTechs: document.getElementById('container_techs'),
             paragraphInfo: document.getElementById('paragraph_info'),
             linkGithub: document.getElementById('link_github'),
             imgPreview: document.getElementById('img_preview'),
             linkLive: document.getElementById('link_live'),
+            btnPrev: document.getElementById('btn_prev'),
+            btnNext: document.getElementById('btn_next'),
             title: document.getElementById('title'),
             list: document.getElementById('list'),
             info: document.getElementById('info'),
@@ -61,7 +61,9 @@
                 App.htmlElements.imgPreview.src = `../assets/img/${mobile_img}`;
                 App.htmlElements.containerTechs.innerHTML = ''
                 logos.forEach(logo => {
-                    App.htmlElements.containerTechs.innerHTML += `<img class="img__techs" src="../assets/img/${logo}" alt="web tech logo">`
+                    App.htmlElements.containerTechs.innerHTML += 
+                    `<img class="img__techs" src="../assets/img/${logo}" alt="web tech logo">`
+                    // `<img class="img__techs" src="../assets/img/${logo}" alt="web tech logo">` FALTA ESTA PARA DESKTOPS...  Y CORREGIR LA IMG de Huddle (es gigante)
                 })
             }
         },
@@ -69,13 +71,13 @@
             nextProject: () => {
                 if (App.variables.counter < App.variables.projects.length-1) {
                     App.variables.counter = App.variables.counter + 1;
-                    App.utils.test(App.variables.counter);
+                    App.utils.changeProject(App.variables.counter);
                 }
             },
             prevProject: () => {
                 if (App.variables.counter > 0) {
                     App.variables.counter = App.variables.counter - 1;
-                    App.utils.test(App.variables.counter);
+                    App.utils.changeProject(App.variables.counter);
                 }
             },
             changeProject: (number) => {

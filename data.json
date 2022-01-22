@@ -21,6 +21,50 @@
             "built" : [ "Angular", "Angular Material", "Html 5", "CSS3" ],
             "info" : "A single page app built on html5, CSS and Vue. It has a dynamic image gallery and an adaptable design to mobile devices.",
             "logos": ["angular.png", "html5.png", "css3.png"]
+        },
+        {
+            "desktop_img": "ipaddress.png",
+            "mobile_img": "ipaddress_mobile.jpg",
+            "title": "IP address tracker",
+            "description" : "In this challenge, you'll be using two separate APIs together to create an IP Address Tracking app.",
+            "live_site" : "https://abdielp.github.io/Angular-ip-address-tracker",
+            "github" : "https://github.com/AbdielP/Angular-ip-address-tracker",
+            "built" : [ "Angular", "Html 5", "Sass" ],
+            "info" : "A single page app built on html5, CSS and Vue. It has a dynamic image gallery and an adaptable design to mobile devices.",
+            "logos": ["angular.png", "html5.png", "sass.png"]
+        },
+        {
+            "desktop_img": "pinglanding.png",
+            "mobile_img": "pinglanding_mobile.png",
+            "title": "Ping single column coming soon page",
+            "description" : "This challenge is great for beginners and offers a chance to practice basic client-side form validation.",
+            "live_site" : "https://abdielp.github.io/ping-coming-soon-page/",
+            "github" : "https://github.com/AbdielP/ping-coming-soon-page",
+            "built" : [ "Vue", "Html 5", "Scss" ],
+            "info" : "A single page app built on html5, CSS and Vue. It has a dynamic image gallery and an adaptable design to mobile devices.",
+            "logos": ["vue.png", "html5.png", "sass.png"]
+        },
+        {
+            "desktop_img": "singleprice.png",
+            "mobile_img": "singleprice_mobile.png",
+            "title": "Single price grid component",
+            "description" : "In this challenge, you will build out the pricing component to the designs provided. This is perfect for beginners and people who want to complete a smaller challenge.",
+            "live_site" : "https://abdielp.github.io/single-price-grid/",
+            "github" : "https://github.com/AbdielP/single-price-grid",
+            "built" : ["Html 5", "Scss" ],
+            "info" : "A single page app built on html5, CSS and Vue. It has a dynamic image gallery and an adaptable design to mobile devices.",
+            "logos": ["html5.png", "sass.png"]
+        },
+        {
+            "desktop_img": "landing_page.png",
+            "mobile_img": "landing_page_mobile.png",
+            "title": "Huddle landing page with curved sections",
+            "description" : "Practice using pseudo-elements for styling extras and the CSS position property for the sections with curved edges.",
+            "live_site" : "https://abdielp.github.io/curve-landing-page/",
+            "github" : "https://github.com/AbdielP/curve-landing-page",
+            "built" : ["Javascript", "Html 5", "Scss" ],
+            "info" : "A single page app built on html5, CSS and Vue. It has a dynamic image gallery and an adaptable design to mobile devices.",
+            "logos": ["javascript.png", "html5.png", "css3.png"]
         }
     ]
 }
