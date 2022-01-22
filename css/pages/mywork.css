@@ -48,6 +48,7 @@
 
 .title {
     color: var(--color-background);
+    font-family: var(--font-mochiy);
     font-size: 1.5rem;
 }
 .paragraph__info {
@@ -93,6 +94,7 @@
 }
 
 .h4 {
+    font-family: var(--font-mochiy);
     font-size: 1.2rem;
     margin-bottom: 10px;
 }

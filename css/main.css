@@ -182,11 +182,11 @@
     padding: 0.5vw 2vw;
   }
   .h1 {
-    
+    font-family: var(--font-mochiy);
     font-size: 3vw;
   }
   .paragraph__presentation {
-    font-family: var(--font-main);
+    font-family: var(--font-barlow);
     font-size: 1.3vw;
   }
 

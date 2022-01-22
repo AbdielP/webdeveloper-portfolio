@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;600;700&family=Fraunces:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
 
 * {
     padding: 0;
@@ -8,7 +9,9 @@
 
     --font-comissioner: 'Commissioner', sans-serif;
     --font-fraunces: 'Fraunces', serif;
-    --font-main: 'Barlow', sans-serif;
+    --font-barlow: 'Barlow', sans-serif;
+    --font-mochiy: 'Mochiy Pop P One', sans-serif;
+    
     --color-background: #EFF8FB;
     --color-main: #263165;
     --color-main-dark: #141a35;
@@ -29,7 +32,8 @@ body {
     height: 100vh;
     font-size: 12px;
     color: var(--color-main);
-    font-family: var(--font-fraunces);
+    /* font-family: var(--font-fraunces); */
+    /* font-family: var(--font-main); */
     background: var(--color-background);
 }
 
