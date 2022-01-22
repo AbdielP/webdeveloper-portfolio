@@ -20,7 +20,7 @@
 }
 
 .title {
-    color: var(--color-main-dark);
+    color: var(--color-main);
     font-family: var(--font-comissioner);
     font-weight: 700;
     font-size: 15px;

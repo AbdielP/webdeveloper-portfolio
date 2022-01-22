@@ -17,7 +17,7 @@
             showProjects: (projects) => {
                 projects.forEach((project, index, arr) => {
                     App.htmlElements.myworkContainer.innerHTML +=
-                    `<div class="card cursor-pointer">
+                    `<div class="card cursor-pointer shadows">
                         <a href="pages/mywork.html?project=${index}">
                             <img class="card__img" src="assets/img/${project.desktop_img}" alt="room homepage website">
                         </a>

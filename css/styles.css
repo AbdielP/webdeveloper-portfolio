@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;600;700&family=Fraunces:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800&display=swap');
 
 * {
     padding: 0;
@@ -7,17 +8,18 @@
 
     --font-comissioner: 'Commissioner', sans-serif;
     --font-fraunces: 'Fraunces', serif;
-    --color-background: #E3EAFF;
-    --color-main: hsl(206, 5%, 29%);
-    --color-main-dark: hsl(225, 3%, 25%);
-    --color-main-light: hsla(206, 5%, 29%, 60%);
-    --color-secondary: #8de2c7;
+    --font-main: 'Barlow', sans-serif;
+    --color-background: #EFF8FB;
+    --color-main: #263165;
+    --color-main-dark: #141a35;
+    --color-main-light: #374692;
+    --color-secondary: #EF7D3C;
 
-    --color-alternative-gray: #5B6775;
+    --color-green: #60955F;
+    /* --color-alternative-gray: #5B6775;
     --color-alternative-red: #B12A1C;
-    --color-alternative-yellow: #E6AD38;
+    --color-alternative-yellow: #E6AD38; */
 
-    /* #474b4e */
     --header-height: 50px;
     --header-height-desktop: 3vw;
 }
@@ -47,3 +49,8 @@ body {
     color: var(--color-secondary);
 }
 
+.shadows {
+    box-shadow: -3px 4px 12px 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: -3px 4px 12px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: -3px 4px 12px 1px rgba(0, 0, 0, 0.1);
+}
