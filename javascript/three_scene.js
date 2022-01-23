@@ -1,4 +1,5 @@
 const scene = new THREE.Scene();
+const canvas = document.querySelector('canvas.webgl')
 
 const geometry = new THREE.BoxGeometry(1,1,1);
 const material = new THREE.MeshBasicMaterial({
@@ -9,23 +10,55 @@ scene.add(mesh);
 
 // Sizes 
 const sizes = {
-    width: 1600,
-    height: 600
-    // PON AQUÍ TAMAÑO DINÁMICO
+    width: window.innerWidth,
+    height: window.innerHeight
 }
 
-// CAMERA
-const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height);
-camera.position.z = 3;
-scene.add(camera);
+window.addEventListener('resize', () => {
+    // Update sizes
+    sizes.width = window.innerWidth;
+    sizes.height = window.innerHeight;
 
-// Renderer (El canvas u objeto donde se renderiza la escena);
-const canvas = document.querySelector('.webgl');
-console.log(canvas)
-const renderer = new THREE.WebGLRenderer({
-    canvas : canvas
+    // Update camera
+    camera.aspect = sizes.width / sizes.height
+    camera.updateProjectionMatrix();
+
+    // Update renderer
+    renderer.setSize(sizes.width, sizes.height);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 });
 
-renderer.setSize(sizes.width, sizes.height);
+/**
+ * Camera
+ */
+// Base camera
+const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
+camera.position.z = 3
+scene.add(camera)
 
-renderer.render(scene, camera);
+/**
+ * Renderer
+ */
+const renderer = new THREE.WebGLRenderer({
+    canvas: canvas
+})
+renderer.setSize(sizes.width, sizes.height);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+/**
+ * Animate
+ */
+const clock = new THREE.Clock()
+
+const tick = () =>
+{
+    const elapsedTime = clock.getElapsedTime()
+
+    // Render
+    renderer.render(scene, camera)
+
+    // Call tick again on the next frame
+    window.requestAnimationFrame(tick)
+}
+
+tick()
