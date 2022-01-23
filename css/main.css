@@ -1,3 +1,12 @@
+.img__tower {
+  width: 15%;
+  position: absolute;
+  z-index: 0;
+  /* left: 13%;
+  top: 15%; */
+  opacity: .1;
+}
+
 .main {
   width: 100%;
   height: calc(100% - var(--header-height));
@@ -178,6 +187,14 @@
 }
 
 @media (min-width: 950px) {
+  .img__tower {
+    left: 26%;
+    bottom: 12%;
+    opacity: .5;
+    /* bottom: 4vw; */
+    /* left: 16vw; */
+  }
+  
   .presentation {
     padding: 0.5vw 2vw;
   }

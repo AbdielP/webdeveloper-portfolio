@@ -6,7 +6,9 @@ const material = new THREE.MeshBasicMaterial({
     color: 0xff0000
 });
 const mesh = new THREE.Mesh(geometry, material);
-scene.add(mesh);
+// scene.add(mesh);
+
+scene.background = new THREE.Color(0xEFF8FB);
 
 // Sizes 
 const sizes = {
