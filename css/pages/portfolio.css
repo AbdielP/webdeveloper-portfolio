@@ -1,0 +1,34 @@
+.main {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+}
+
+.section_image {
+    width: 100%;
+    height: auto;
+}
+
+.container__img {
+    width: 100%;
+    height: auto;
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    background-color: khaki;
+}
+
+@media (min-width: 600px) {}
+
+@media (min-width: 1000px) {}
