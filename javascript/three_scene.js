@@ -1,12 +1,17 @@
 const scene = new THREE.Scene();
 const canvas = document.querySelector('canvas.webgl')
 
-const geometry = new THREE.BoxGeometry(1,1,1);
+const geometry = new THREE.BoxGeometry(.25,.2,.2);
+// const material = new THREE.MeshBasicMaterial({
+//     color: 0xff0000
+// });
+const loader = new THREE.TextureLoader();
 const material = new THREE.MeshBasicMaterial({
-    color: 0xff0000
+    map: loader.load("assets/img/Nube1.png")
 });
+
 const mesh = new THREE.Mesh(geometry, material);
-// scene.add(mesh);
+scene.add(mesh);
 
 scene.background = new THREE.Color(0xEFF8FB);
 
@@ -55,6 +60,10 @@ const clock = new THREE.Clock()
 const tick = () =>
 {
     const elapsedTime = clock.getElapsedTime()
+
+    mesh.position.x = Math.sin(elapsedTime / 50); 
+    // mesh.position.x += -0.0001 * elapsedTime;
+    // mesh.position.x = Math.sin(elapsedTime)
 
     // Render
     renderer.render(scene, camera)
