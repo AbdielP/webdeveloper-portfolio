@@ -98,6 +98,7 @@
 
 .list {
   list-style: none;
+  /* CORRIGIENDO LOS PADDING ADAPTABLES */
 }
 
 .div__container_images {
@@ -225,7 +226,12 @@
   }
 
   .container__info {
+    font-size: 1vw;
     width: 80%;
+  }
+
+  .h4 {
+      font-size: 1.5vw;
   }
 
   .div__container_images,
