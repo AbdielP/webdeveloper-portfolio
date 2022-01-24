@@ -7,6 +7,10 @@
         },
         htmlElements: {
             containerImg: document.querySelector('#container_image'),
+            paragraphInfo: document.querySelector('#paragraph_info'),
+            linkGithub: document.querySelector('#link_github'),
+            linkLive: document.querySelector('#link_live'),
+            title: document.querySelector('#title'),
         },
         init: () => {
             App.initializeData.params();
@@ -28,6 +32,10 @@
         events: {
             displayHTML: ({ desktop_img, mobile_img, title, description, live_site, github, built, info, logos }) => {
                 App.htmlElements.containerImg.style.backgroundImage = `url(../assets/img/${desktop_img})`
+                App.htmlElements.paragraphInfo.textContent = description;
+                App.htmlElements.title.textContent = title;
+                App.htmlElements.linkLive.href = live_site;
+                App.htmlElements.linkGithub.href = github;
             }
         },
         utils: {}
