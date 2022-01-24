@@ -223,11 +223,20 @@
   }
   .container__links {
     padding: 0;
+    margin-bottom: 0;
   }
 
   .container__info {
     font-size: 1vw;
     width: 80%;
+  }
+
+  .list {
+    margin: .5vw 0;
+  }
+  
+  .container__hr {
+    margin: 1vw 0;
   }
 
   .h4 {
