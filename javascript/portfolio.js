@@ -6,11 +6,15 @@
             counter: 0
         },
         htmlElements: {
+            imgPreviewDesktop: document.querySelector('#img_preview_desktop'),
             containerImg: document.querySelector('#container_image'),
             paragraphInfo: document.querySelector('#paragraph_info'),
             linkGithub: document.querySelector('#link_github'),
+            imgPreview: document.querySelector('#img_preview'),
             linkLive: document.querySelector('#link_live'),
             title: document.querySelector('#title'),
+            list: document.querySelector('#list'),
+            info: document.querySelector('#info'),
         },
         init: () => {
             App.initializeData.params();
@@ -31,11 +35,17 @@
         },
         events: {
             displayHTML: ({ desktop_img, mobile_img, title, description, live_site, github, built, info, logos }) => {
-                App.htmlElements.containerImg.style.backgroundImage = `url(../assets/img/${desktop_img})`
+                App.htmlElements.containerImg.style.backgroundImage = `url(../assets/img/${desktop_img})`;
+                // App.htmlElements.imgPreviewDesktop.src = `../assets/img/${desktop_img}`;
+                App.htmlElements.imgPreview.src = `../assets/img/${mobile_img}`;
                 App.htmlElements.paragraphInfo.textContent = description;
                 App.htmlElements.title.textContent = title;
                 App.htmlElements.linkLive.href = live_site;
                 App.htmlElements.linkGithub.href = github;
+                App.htmlElements.info.textContent = info;
+                built.forEach(element => {
+                    App.htmlElements.list.innerHTML += `<li>${element}</li>`;
+                });
             }
         },
         utils: {}

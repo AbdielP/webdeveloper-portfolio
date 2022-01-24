@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abdiel P. Carrera - Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/pages/portfolio.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
 </head>
 
 <body>
@@ -31,13 +31,41 @@
                 Github
             </a>
         </section>
-        
+
         <!-- SECTION ABOUT  -->
-        <section>3</section>
+        <section class="section__about display-flex">
+            <div class="container__about display-flex">
+                <div class="container__info">
+                    <h4 class="h4">Built with</h4>
+                    <ul class="list" id="list">
+                        <!-- LISTA -->
+                    </ul>
+                    <hr class="container__hr">
+                    <p id="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod magnam consectetur officia
+                        rerum minus soluta?</p>
+                </div>
+                <div class="div__container_images display-flex">
+                    <div class="div__preview">
+                        <img class="img__preview" id="img_preview" alt="Room homepage mobile">
+                        <img class="img__preview--desktop" id="img_preview_desktop" alt="Room homepage website">
+                    </div>
+                </div>
+            </div>
+            <div class="container__links display-flex">
+                <button class="btn__project display-flex cursor-pointer" id="btn_prev" type="button" aria-labelledby="Previous project">
+                    <img class="arrow arrow--left" src="../assets/icons/icon-arrow.svg" alt="Icon arrow"> Previous
+                    project
+                </button>
+                <a class="link__home btn__project" href="../index.html">Home</a>
+                <button class="btn__project display-flex cursor-pointer" id="btn_next" type="button" aria-labelledby="Next project">Next project
+                    <img class="arrow" src="../assets/icons/icon-arrow.svg" alt="Icon arrow">
+                </button>
+            </div>
+        </section>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
         lol
-    </footer>
+    </footer> -->
     <script src="../javascript/services/services.js"></script>
     <script src="../javascript/portfolio.js"></script>
 </body>
