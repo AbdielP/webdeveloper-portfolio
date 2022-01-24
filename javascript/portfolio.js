@@ -6,7 +6,7 @@
             counter: 0
         },
         htmlElements: {
-            imgPreviewDesktop: document.querySelector('#img_preview_desktop'),
+            containerTechs: document.querySelector('#container_techs'),
             containerImg: document.querySelector('#container_image'),
             paragraphInfo: document.querySelector('#paragraph_info'),
             linkGithub: document.querySelector('#link_github'),
@@ -36,7 +36,6 @@
         events: {
             displayHTML: ({ desktop_img, mobile_img, title, description, live_site, github, built, info, logos }) => {
                 App.htmlElements.containerImg.style.backgroundImage = `url(../assets/img/${desktop_img})`;
-                // App.htmlElements.imgPreviewDesktop.src = `../assets/img/${desktop_img}`;
                 App.htmlElements.imgPreview.src = `../assets/img/${mobile_img}`;
                 App.htmlElements.paragraphInfo.textContent = description;
                 App.htmlElements.title.textContent = title;
@@ -46,6 +45,10 @@
                 built.forEach(element => {
                     App.htmlElements.list.innerHTML += `<li>${element}</li>`;
                 });
+                logos.forEach(logo => {
+                    App.htmlElements.containerTechs.innerHTML += 
+                    `<img class="img__techs" src="../assets/img/${logo}" alt="web tech logo">`
+                })
             }
         },
         utils: {}
