@@ -45,7 +45,6 @@
         },
         events: {
             displayHTML: ({ desktop_img, mobile_img, title, description, live_site, github, built, info, logos }) => {
-                // App.htmlElements.containerImg.classList.add('animate__fadeInLeft');
                 App.htmlElements.containerImg.style.backgroundImage = `url(../assets/img/${desktop_img})`;
                 App.htmlElements.imgPreview.src = `../assets/img/${mobile_img}`;
                 App.htmlElements.paragraphInfo.textContent = description;
@@ -62,25 +61,31 @@
                     App.htmlElements.containerTechs.innerHTML += 
                     `<img class="img__techs" src="../assets/img/${logo}" alt="web tech logo">`
                 });
-                // App.htmlElements.containerImg.classList.remove('animate__fadeInLeft');
             }
         },
         utils: {
             nextProject: () => {
                 if (App.variables.counter < App.variables.projects.length-1) {
+                    // App.utils.animate();
                     App.variables.counter = App.variables.counter + 1;
                     App.utils.changeProject(App.variables.counter);
                 }
             },
             prevProject: () => {
                 if (App.variables.counter > 0) {
+                    // || App.variables.projectIndex != null
+                    // App.variables.counter = Number(App.variables.projectIndex);
+                    // console.log(App.variables.projectIndex, App.variables.counter)
                     App.variables.counter = App.variables.counter - 1;
                     App.utils.changeProject(App.variables.counter);
                 }
             },
             changeProject: (number) => {
-                history.pushState({}, 'mywork', `mywork.html?project=${Number(number)}`);
+                history.pushState({}, 'portfolio', `portfolio.html?project=${Number(number)}`);
                 App.events.displayHTML(App.variables.projects[number]);
+            },
+            animate: () => {
+                App.htmlElements.containerImg.style.transform = 'translatex(100%)';
             }
         }
     }
