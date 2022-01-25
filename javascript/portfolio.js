@@ -1,7 +1,7 @@
 (() => {
     const App = {
         variables: {
-            projectIndex: null,
+            projectIndex: 0,
             projects: [],
             counter: 0
         },
@@ -35,12 +35,15 @@
             projects: async () => {
                 const data = await Service.getProjects('../data.json');
                 const project = data.projects[App.variables.projectIndex];
+                App.variables.projects = data.projects; 
+                App.utils.notFound();
                 App.events.displayHTML(project);
-                App.variables.projects = data.projects;
-            },
-            params: () => {
+            }, params: () => {
                 const urlParams = new URLSearchParams(window.location.search);
                 App.variables.projectIndex = urlParams.get('project');
+                App.initializeData.setIndex();
+            }, setIndex: () => {
+                App.variables.counter = Number(App.variables.projectIndex);
             }
         },
         events: {
@@ -65,27 +68,26 @@
         },
         utils: {
             nextProject: () => {
-                if (App.variables.counter < App.variables.projects.length-1) {
-                    // App.utils.animate();
-                    App.variables.counter = App.variables.counter + 1;
+                if (App.variables.counter >= App.variables.projects.length -1) {
+                    return;
+                } else {  
+                    App.variables.counter++;
                     App.utils.changeProject(App.variables.counter);
                 }
-            },
-            prevProject: () => {
-                if (App.variables.counter > 0) {
-                    // || App.variables.projectIndex != null
-                    // App.variables.counter = Number(App.variables.projectIndex);
-                    // console.log(App.variables.projectIndex, App.variables.counter)
-                    App.variables.counter = App.variables.counter - 1;
+            }, prevProject: () => {
+                if (App.variables.counter === 0) {
+                    return;
+                } else {
+                    App.variables.counter--;
                     App.utils.changeProject(App.variables.counter);
                 }
-            },
-            changeProject: (number) => {
+            }, changeProject: (number) => {
                 history.pushState({}, 'portfolio', `portfolio.html?project=${Number(number)}`);
                 App.events.displayHTML(App.variables.projects[number]);
-            },
-            animate: () => {
-                App.htmlElements.containerImg.style.transform = 'translatex(100%)';
+            }, notFound: () => {
+                if (App.variables.projectIndex > App.variables.projects.length -1) {
+                    window.location.href = "../index.html";
+                }
             }
         }
     }
