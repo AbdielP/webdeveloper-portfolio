@@ -128,7 +128,9 @@
   transition: 0.3s ease-in-out;
 }.card:hover {
   transform: scale(1.03);
-  box-shadow: none;
+  box-shadow: -3px 5px 5px 0px rgba(0,0,0,0.13);
+  -moz-box-shadow: -3px 5px 5px 0px rgba(0,0,0,0.13);
+  -webkit-box-shadow: -3px 5px 5px 0px rgba(0,0,0,0.13);
 }
 
 .card__img {

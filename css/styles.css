@@ -18,6 +18,7 @@
     --color-main-light: #374692;
     --color-secondary: #EF7D3C;
     --color-background: #EFF8FB;
+    --color-background-darker: #c2cbce;
 
     --header-height: 50px;
     --header-height-desktop: 3vw;
@@ -48,7 +49,8 @@ body {
 }
 
 .shadows {
-    box-shadow: -3px 4px 12px 1px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: -3px 4px 12px 1px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: -3px 4px 12px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: -3px 5px 5px 0px rgba(0,0,0,0.13);
+-webkit-box-shadow: -3px 5px 5px 0px rgba(0,0,0,0.13);
+-moz-box-shadow: -3px 5px 5px 0px rgba(0,0,0,0.13);
+    
 }
