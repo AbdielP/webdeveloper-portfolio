@@ -117,7 +117,7 @@
 
 .container__info {
   width: 60%;
-  height: 100%;
+  height: auto;
 }
 
 .container__hr {
@@ -138,7 +138,7 @@
 .div__container_images {
   align-items: center;
   justify-content: center;
-  width: 60%;
+  width: 50%;
   height: auto;
 }
 
@@ -147,18 +147,13 @@
 }
 
 .div__preview {
-  width: 60%;
-  height: 200px;
+  width: 50%;
+  height: 60%;
   overflow: auto;
 }
 
-.img__preview,
-.img__preview--desktop {
+.img__preview {
   width: 100%;
-}
-
-.img__preview--desktop {
-  display: none;
 }
 
 .container__links {
@@ -212,11 +207,11 @@
     brightness(103%) contrast(105%);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
 
   .main {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
+    grid-template-rows: 1fr 1fr;
   }
 
   .section__image {
@@ -230,9 +225,38 @@
   .container__img {
     height: 100%;
   }
+
+  .div__container_images {
+    display: none;
+  }
+
+  .container__techs {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section__about {
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  .container__info {
+    width: 80%;
+  }
+
+
+  .img__techs {
+    width: 3vw;
+    margin: 0.5vw;
+  }
+  
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1300px) {
   .main {
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: auto auto;
@@ -296,26 +320,21 @@
     letter-spacing: 0.13vw;
   }
 
+  .container__info,
+  .section__title {
+    padding: 4vw;
+  }
+  
+  .container__info {
+    font-size: 1vw;
+  }
+
   .a__icon {
     width: 1.3vw;
   }
   .a__info {
     font-size: 1.3vw;
     padding-bottom: 1vw;
-  }
-
-  .container__info,
-  .section__title {
-    padding: 4vw;
-  }
-  .container__links {
-    padding: 0;
-    margin-bottom: 0;
-  }
-
-  .container__info {
-    font-size: 1vw;
-    width: 80%;
   }
 
   .list {
@@ -330,22 +349,8 @@
     font-size: 1.5vw;
   }
 
-  .div__container_images,
   .container__social {
     display: none;
   }
 
-  .container__techs {
-    width: 20%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .img__techs {
-    width: 3vw;
-    margin: 0.5vw;
-  }
 }
