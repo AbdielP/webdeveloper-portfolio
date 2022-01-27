@@ -45,15 +45,15 @@
             "logos": ["vue.png", "html5.png", "sass.png"]
         },
         {
-            "desktop_img": "singleprice.png",
-            "mobile_img": "singleprice_mobile.png",
-            "title": "Single price grid component",
-            "description" : "An small pricing component, perfect to practice your css Grid and flex-box skills.",
-            "live_site" : "https://abdielp.github.io/single-price-grid/",
-            "github" : "https://github.com/AbdielP/single-price-grid",
-            "built" : ["Html 5", "CSS3" ],
-            "info" : "Just a simple web component built on Html and CSS. It was a perfect chance to practice and improve CSS BEM methodology skills.",
-            "logos": ["html5.png", "css3.png"]
+            "desktop_img": "portfolio.png",
+            "mobile_img": "portfolio_mobile.png",
+            "title": "Frontend Web Developer Portfolio",
+            "description" : "My developer portfolio. It's a fully responsive web page that compiles my work.",
+            "live_site" : "https://abdielp.github.io/webdeveloper-portfolio/",
+            "github" : "https://github.com/AbdielP/webdeveloper-portfolio",
+            "built" : ["Javascript", "Html 5", "CSS3" ],
+            "info" : "A responsive web page built with Html5, CSS3. It has a logic layer built with modular design pattern in javascript.",
+            "logos": ["javascript.png", "html5.png", "css3.png"]
         },
         {
             "desktop_img": "landing_page.png",
@@ -65,6 +65,28 @@
             "built" : ["Javascript", "Html 5", "Scss" ],
             "info" : "A good challenge to practice CSS position property for the sections with curved edges. It implements a little form email validation in Javascript and uses modular pattern design.",
             "logos": ["javascript.png", "html5.png", "css3.png"]
+        },
+        {
+            "desktop_img": "snmp.png",
+            "mobile_img": "snmp_mobile.png",
+            "title": "SNMP Temperature & Humidity Monitoring",
+            "description" : "Web app for ambient condition measuring. It's connected to a backend Nodejs server that implements an npm package for SNMP monitoring.",
+            "live_site" : "",
+            "github" : "https://github.com/AbdielP/snmp_manager",
+            "built" : ["Javascript", "Html 5", "CSS", "NodeJS" ],
+            "info" : "Frontend and backend Javascript app, created to help to monitoring ambient conditions in a datacenter. It's a Nodejs dockerized application that connect to temperature sensors via SNMP.",
+            "logos": ["javascript.png", "html5.png", "css3.png", "nodejs.png", "docker.png"]
+        },
+        {
+            "desktop_img": "singleprice.png",
+            "mobile_img": "singleprice_mobile.png",
+            "title": "Single price grid component",
+            "description" : "An small pricing component, perfect to practice your css Grid and flex-box skills.",
+            "live_site" : "https://abdielp.github.io/single-price-grid/",
+            "github" : "https://github.com/AbdielP/single-price-grid",
+            "built" : ["Html 5", "CSS3" ],
+            "info" : "Just a simple web component built on Html and CSS. It was a perfect chance to practice and improve CSS BEM methodology skills.",
+            "logos": ["html5.png", "css3.png"]
         }
     ]
 }

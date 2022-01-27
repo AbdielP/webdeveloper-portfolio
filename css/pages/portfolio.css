@@ -73,8 +73,7 @@
   color: var(--color-background);
 }
 
-.paragraph__info,
-.paragraph__description {
+.paragraph__info {
   text-align: justify;
 }
 
@@ -157,12 +156,15 @@
 }
 
 .div__preview {
+  margin: 15px 0;
   width: 50%;
-  height: 60%;
+  min-height: 200px;
+  height: 50vw;
   overflow: auto;
 }
 
 .img__preview {
+  min-height: 200px;
   width: 100%;
 }
 /* SECTION ABOUT END */

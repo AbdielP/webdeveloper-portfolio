@@ -16,12 +16,14 @@
         events: {
             showProjects: (projects) => {
                 projects.forEach((project, index, arr) => {
-                    App.htmlElements.myworkContainer.innerHTML +=
-                    `<div class="card cursor-pointer">
-                        <a href="pages/portfolio.html?project=${index}">
-                            <img class="card__img" src="assets/img/${project.desktop_img}" alt="room homepage website">
-                        </a>
-                    </div>`;
+                    if( index <= 8) {
+                        App.htmlElements.myworkContainer.innerHTML +=
+                        `<div class="card cursor-pointer">
+                            <a href="pages/portfolio.html?project=${index}">
+                                <img class="card__img" src="assets/img/${project.desktop_img}" alt="room homepage website">
+                            </a>
+                        </div>`;
+                    }
                 });
             }
         }

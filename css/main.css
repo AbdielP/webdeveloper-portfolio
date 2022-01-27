@@ -185,9 +185,8 @@
 
   .link__img {
     margin-top: 1vw;
-    padding: .5vw;
-    width: 3.8vw;
-    border-radius: 50%;
+    padding: .4vw;
+    width: 3.2vw;
   }.link__img:hover {
     transform: scale(1.09);
   }
