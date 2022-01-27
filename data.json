@@ -4,56 +4,56 @@
             "desktop_img": "room_homepage.png",
             "mobile_img": "room_homepage_mobile.png",
             "title": "Room Homepage",
-            "description" : "This small homepage challenge packs a big punch to test your layout skills. There's also a slider in there to add a JS layer for extra practice.",
+            "description" : "This small homepage challenge packs a big punch to test your layout skills. There's also a slider in there to add a JS layer.",
             "live_site" : "https://abdielp.github.io/vue-room-homepage/",
             "github" : "https://github.com/AbdielP/vue-room-homepage",
             "built" : [ "Vue CLI V3@", "Html 5", "CSS3" ],
-            "info" : "A single page app built on html5, CSS and Vue. It has a dynamic image gallery and an adaptable design to mobile devices.",
+            "info" : "A single page app built on html5, CSS and Vue CLI. It has a dynamic image gallery and an adaptable design to mobile devices. Implements some Vuejs basics, such as communication between components, events, data binding and Vue life cycle.",
             "logos": ["vue.png", "html5.png", "css3.png"]
         },
         {
             "desktop_img": "ecommerce.png",
             "mobile_img": "ecommerce_mobile.png",
             "title": "E-commerce product page",
-            "description" : "In this challenge, you'll build a beautiful product page. We'll be putting your JS skills to the test with a lightbox product gallery and cart functionality!.",
+            "description" : "A single web page application built with angular. This app tests your JS skills with a lightbox product gallery and cart functionality.",
             "live_site" : "https://abdielp.github.io/angular-ecommerce-product-page/",
             "github" : "https://github.com/AbdielP/angular-ecommerce-product-page",
             "built" : [ "Angular", "Angular Material", "Html 5", "CSS3" ],
-            "info" : "A single page app built on html5, CSS and Vue. It has a dynamic image gallery and an adaptable design to mobile devices.",
+            "info" : "A single page app built on html5, CSS and Angular. It has a lightbox product gallery and cart functionality. It uses Angular material in its components and implements some basic Aangular fundamentals such as emitting data between components, event emitters and observables.",
             "logos": ["angular.png", "html5.png", "css3.png"]
         },
         {
             "desktop_img": "desktop-preview.jpg",
             "mobile_img": "ipaddress_mobile.jpg",
             "title": "IP address tracker",
-            "description" : "In this challenge, you'll be using two separate APIs together to create an IP Address Tracking app.",
+            "description" : "This web page uses two separate APIs together to create an IP Address Tracking app.",
             "live_site" : "https://abdielp.github.io/Angular-ip-address-tracker",
             "github" : "https://github.com/AbdielP/Angular-ip-address-tracker",
-            "built" : [ "Angular", "Html 5", "Sass" ],
-            "info" : "A single page app built on html5, CSS and Vue. It has a dynamic image gallery and an adaptable design to mobile devices.",
+            "built" : [ "Angular", "Html 5", "Sass", "Mapbox API", "ipify API" ],
+            "info" : "A single page app built on Angular. To get the IP Address locations, I used the IP Geolocation API by IPify, and Mapbox API To generate the map. Both API's has limited ammount of uses, so please use it carefully ;)",
             "logos": ["angular.png", "html5.png", "sass.png"]
         },
         {
             "desktop_img": "pinglanding.png",
             "mobile_img": "pinglanding_mobile.png",
             "title": "Ping single column coming soon page",
-            "description" : "This challenge is great for beginners and offers a chance to practice basic client-side form validation.",
+            "description" : "Just a good chance to practice basic client-side form validation using Vue Library.",
             "live_site" : "https://abdielp.github.io/ping-coming-soon-page/",
             "github" : "https://github.com/AbdielP/ping-coming-soon-page",
             "built" : [ "Vue", "Html 5", "Scss" ],
-            "info" : "A single page app built on html5, CSS and Vue. It has a dynamic image gallery and an adaptable design to mobile devices.",
+            "info" : "This is a simple form-validation example on Vue. It receive an error message when the form is submitted if: The input field is empty or The email address is not formatted correctly.",
             "logos": ["vue.png", "html5.png", "sass.png"]
         },
         {
             "desktop_img": "singleprice.png",
             "mobile_img": "singleprice_mobile.png",
             "title": "Single price grid component",
-            "description" : "In this challenge, you will build out the pricing component to the designs provided. This is perfect for beginners and people who want to complete a smaller challenge.",
+            "description" : "An small pricing component, perfect to practice your css Grid and flex-box skills.",
             "live_site" : "https://abdielp.github.io/single-price-grid/",
             "github" : "https://github.com/AbdielP/single-price-grid",
-            "built" : ["Html 5", "Scss" ],
-            "info" : "A single page app built on html5, CSS and Vue. It has a dynamic image gallery and an adaptable design to mobile devices.",
-            "logos": ["html5.png", "sass.png"]
+            "built" : ["Html 5", "CSS3" ],
+            "info" : "Just a simple web component built on Html and CSS. It was a perfect chance to practice and improve CSS BEM methodology skills.",
+            "logos": ["html5.png", "css3.png"]
         },
         {
             "desktop_img": "landing_page.png",
@@ -63,7 +63,7 @@
             "live_site" : "https://abdielp.github.io/curve-landing-page/",
             "github" : "https://github.com/AbdielP/curve-landing-page",
             "built" : ["Javascript", "Html 5", "Scss" ],
-            "info" : "A single page app built on html5, CSS and Vue. It has a dynamic image gallery and an adaptable design to mobile devices.",
+            "info" : "A good challenge to practice CSS position property for the sections with curved edges. It implements a little form email validation in Javascript and uses modular pattern design.",
             "logos": ["javascript.png", "html5.png", "css3.png"]
         }
     ]

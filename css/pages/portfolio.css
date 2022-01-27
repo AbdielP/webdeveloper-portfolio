@@ -73,6 +73,11 @@
   color: var(--color-background);
 }
 
+.paragraph__info,
+.paragraph__description {
+  text-align: justify;
+}
+
 .a__info {
   display: flex;
   font-size: 1rem;
