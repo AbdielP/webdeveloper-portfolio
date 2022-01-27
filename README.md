@@ -81,18 +81,18 @@ Code logic was written using Javascript with a modular pattern design.
 })();
 ```
 
-<p align="right"><a href="#top">back to top</a></p>
+<p align="right"><a href="#top">(back to top)</a></p>
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
 Click on project cards at index.html to get info about my work.
 
-![Cards](https://github.com/AbdielP/webdeveloper-portfolio/blob/master/assets/img/cards.png)
+<img src="https://github.com/AbdielP/webdeveloper-portfolio/blob/master/assets/img/cards.png" alt="Cards" width="550px"/>
 
 Then, on portfolio.html use the navigation buttons to move between projects.
 
-![Nav](https://github.com/AbdielP/webdeveloper-portfolio/blob/master/assets/img/nav_buttons.png)
+<img src="https://github.com/AbdielP/webdeveloper-portfolio/blob/master/assets/img/nav_buttons.png" alt="Cards" width="550px"/>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
