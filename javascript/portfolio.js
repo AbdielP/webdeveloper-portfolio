@@ -52,7 +52,13 @@
                 App.htmlElements.imgPreview.src = `../assets/img/${mobile_img}`;
                 App.htmlElements.paragraphInfo.textContent = description;
                 App.htmlElements.title.textContent = title;
-                App.htmlElements.linkLive.href = live_site;
+                if (live_site === "") {
+                    App.htmlElements.linkLive.href = "";
+                    App.htmlElements.linkLive.innerHTML = "No live site available 🙇"
+                } else {
+                    App.htmlElements.linkLive.innerHTML = `<img class="a__icon" src="../assets/icons/globe-americas-solid.svg" alt="Globe americas icon"> Live site`
+                    App.htmlElements.linkLive.href = live_site;
+                }
                 App.htmlElements.linkGithub.href = github;
                 App.htmlElements.info.textContent = info;
                 App.htmlElements.list.innerHTML = '';

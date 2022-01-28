@@ -78,7 +78,7 @@
             "logos": ["javascript.png", "html5.png", "css3.png", "nodejs.png", "docker.png"]
         },
         {
-            "desktop_img": "qrcargo.png",
+            "desktop_img": "qrcode.png",
             "mobile_img": "qrcargo_mobile.png",
             "title": "Datacenter QR Code App.",
             "description" : "An useful app than generate QR codes. It has an API than serve data from a MySQL database.",
@@ -87,17 +87,6 @@
             "built" : ["Angular", "Angular Material", "Html5", "CSS3", "NodeJS" ],
             "info" : "A private application made to make the register and access process to a datacenter easier. It also have a section to generate QR codes for tagging cargo.",
             "logos": ["angular.png", "html5.png", "css3.png", "nodejs.png"]
-        },
-        {
-            "desktop_img": "keys.png",
-            "mobile_img": "keys_mobile.png",
-            "title": "Datacenter keys code App.",
-            "description" : "Simple UI than show information from a database.",
-            "live_site" : "",
-            "github" : "https://github.com/AbdielP/Portal_llaves_IDC",
-            "built" : ["Angular", "Angular Material", "Html5", "CSS3", "NodeJS" ],
-            "info" : "A private application made to make the register and access process to a datacenter easier. It also have a section to generate QR codes for tagging cargo.",
-            "logos": ["nodejs.png", "html5.png", "css3.png"]
         },
         {
             "desktop_img": "singleprice.png",
