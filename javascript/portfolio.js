@@ -49,27 +49,59 @@
         events: {
             displayHTML: ({ desktop_img, mobile_img, title, description, live_site, github, built, info, logos }) => {
                 App.htmlElements.containerImg.style.backgroundImage = `url(../assets/img/${desktop_img})`;
-                App.htmlElements.imgPreview.src = `../assets/img/${mobile_img}`;
+                App.htmlElements.imgPreview.setAttribute('src', `../assets/img/${mobile_img}`);
+                App.htmlElements.linkGithub.setAttribute('href', github);
+
                 App.htmlElements.paragraphInfo.textContent = description;
                 App.htmlElements.title.textContent = title;
-                if (live_site === "") {
-                    App.htmlElements.linkLive.href = "";
-                    App.htmlElements.linkLive.innerHTML = "No live site available 🙇"
-                } else {
-                    App.htmlElements.linkLive.innerHTML = `<img class="a__icon" src="../assets/icons/globe-americas-solid.svg" alt="Globe americas icon"> Live site`
-                    App.htmlElements.linkLive.href = live_site;
-                }
-                App.htmlElements.linkGithub.href = github;
                 App.htmlElements.info.textContent = info;
+                
+                App.events.displatLiveSite(live_site);
+                App.events.techsDOM(logos);
+                App.events.liDOM(built);
+            },
+            displatLiveSite: (livesite) => {
+                if (livesite === "") {
+                    App.htmlElements.linkLive.removeAttribute('href');
+                    App.htmlElements.linkLive.removeAttribute('target');
+                    App.htmlElements.linkLive.classList.remove('a__info', 'cursor-pointer');
+                    App.htmlElements.linkLive.classList.add('a__info--nolivesite');
+                    App.htmlElements.linkLive.textContent = "No live site available 🙇"
+                } else {
+                    App.htmlElements.linkLive.innerHTML = ''
+                    const img = document.createElement('img');
+                    img.classList.add('a__icon');
+                    img.setAttribute('alt', 'Globe americas icon');
+                    img.setAttribute('src', '../assets/icons/globe-americas-solid.svg');
+                    App.htmlElements.linkLive.append(img);
+                    App.htmlElements.linkLive.append('Live site');
+                    App.htmlElements.linkLive.classList.remove('a__info--nolivesite');
+                    App.htmlElements.linkLive.classList.add('a__info', 'cursor-pointer');
+                    App.htmlElements.linkLive.setAttribute('target', '_blank');
+                    App.htmlElements.linkLive.setAttribute('href', livesite);
+                }
+            },
+            liDOM: (built) => {
                 App.htmlElements.list.innerHTML = '';
+                const domFragment = document.createDocumentFragment();
                 built.forEach(element => {
-                    App.htmlElements.list.innerHTML += `<li>${element}</li>`;
+                    let li = document.createElement('li');
+                    li.append(element);
+                    domFragment.appendChild(li);
                 });
-                App.htmlElements.containerTechs.innerHTML = ''
+                App.htmlElements.list.append(domFragment);
+            },
+            techsDOM: (logos) => {
+                App.htmlElements.containerTechs.innerHTML = '';
+                const domFragment = document.createDocumentFragment();
                 logos.forEach(logo => {
-                    App.htmlElements.containerTechs.innerHTML += 
-                    `<img class="img__techs" src="../assets/img/${logo}" alt="web tech logo">`
+                    let img = document.createElement('img');
+                    img.classList.add('img__techs');
+                    img.setAttribute('alt', 'web technology');
+                    img.setAttribute('src', `../assets/img/${logo}`)
+                    domFragment.appendChild(img);
                 });
+                App.htmlElements.containerTechs.append(domFragment);
             }
         },
         utils: {

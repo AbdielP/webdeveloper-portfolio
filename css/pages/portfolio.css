@@ -77,7 +77,8 @@
   text-align: justify;
 }
 
-.a__info {
+.a__info,
+.a__info--nolivesite {
   display: flex;
   font-size: 1rem;
   margin-top: 2vw;
@@ -86,9 +87,12 @@
   text-decoration: none;
   color: var(--color-background);
   font-family: var(--fount-fraunces);
-  border-bottom: 1px solid var(--color-main-light);
   /* background: red; */
-}.a__info:hover {
+}
+.a__info {
+  border-bottom: 1px solid var(--color-main-light);
+}
+.a__info:hover {
   color: var(--color-background-darker);
   border-bottom: 1px solid var(--color-background-darker);
   transition: 0.2s ease-in-out;
