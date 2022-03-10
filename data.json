@@ -41,7 +41,7 @@
             "live_site" : "https://abdielp.github.io/vue-jsonwebtoken/",
             "github" : "https://github.com/AbdielP/vue-jsonwebtoken",
             "built" : ["Vue CLI V3@", "Vuelidate", "Scss", "NodeJS", "Mongoose", "MongoDB"],
-            "info" : "jsonwebtoken app with dynamic register form and basic model-based validations with Vuelidate. It has a login, register and user pages to navigate. Implements a NodeJS backend and Mongodb database",
+            "info" : "Jsonwebtoken app with dynamic register form and basic model-based validations with Vuelidate. It has a login, register and user pages to navigate. Implements a NodeJS backend and Mongodb database",
             "logos": ["nodejs.png", "mongodb.png", "vue.png"]
         },
         {
@@ -65,6 +65,17 @@
             "built" : ["Javascript", "Html 5", "Scss" ],
             "info" : "A good challenge to practice CSS position property for the sections with curved edges. It implements a little form email validation in Javascript and uses modular pattern design.",
             "logos": ["javascript.png", "html5.png", "css3.png"]
+        },
+        {
+            "desktop_img": "geocoding.png",
+            "mobile_img": "geocoding_mobile.png",
+            "title": "Leaflet, Mapbox geocoding map",
+            "description" : "Geocoding web application made with Leaflet and Mapbox API",
+            "live_site" : "https://abdielp.github.io/vue-geocoding/",
+            "github" : "https://github.com/AbdielP/vue-geocoding",
+            "built" : ["Vue CLI V3@", "Bootstrap 5", "Leaflet", "Mapbox API", "NodeJS" ],
+            "info" : "A Vue 3 geocoding application made with Leaflet and Mapbox API. The users can search for places on the map and find their own location.",
+            "logos": ["vue.png", "bootstrap.png", "nodejs.png"]
         },
         {
             "desktop_img": "snmp.png",
