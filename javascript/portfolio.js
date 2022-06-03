@@ -84,17 +84,17 @@
             liDOM: (built) => {
                 App.htmlElements.list.innerHTML = '';
                 const domFragment = document.createDocumentFragment();
-                built.forEach(element => {
+                built.map( element => {
                     let li = document.createElement('li');
                     li.append(element);
                     domFragment.appendChild(li);
-                });
+                })
                 App.htmlElements.list.append(domFragment);
             },
             techsDOM: (logos) => {
                 App.htmlElements.containerTechs.innerHTML = '';
                 const domFragment = document.createDocumentFragment();
-                logos.forEach(logo => {
+                logos.map(logo => {
                     let img = document.createElement('img');
                     img.classList.add('img__techs');
                     img.setAttribute('alt', 'web technology');
