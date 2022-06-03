@@ -67,7 +67,7 @@ Code logic was written using Javascript with a modular pattern design.
         events: {
             cardsDOM: (projects) => {
                 let divFragment = document.createDocumentFragment();
-                projects.forEach((project, index, arr) => {
+                projects.filter((project, index) => index < 9 ).map((project, index) => {
                     let a = document.createElement('a');
                     let div = document.createElement('div');
                     let img = document.createElement('img');
