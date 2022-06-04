@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;600;700&family=Fraunces:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
 
 * {
     padding: 0;
@@ -11,6 +12,7 @@
     --font-barlow: 'Barlow', sans-serif;
     --font-mochiy: 'Mochiy Pop P One', sans-serif;
     --font-comissioner: 'Commissioner', sans-serif;
+    --font-readex: 'Readex Pro', sans-serif;
     
     --color-main: #263165;
     --color-green: #60955F;
@@ -26,7 +28,7 @@
 
 body {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     font-size: 12px;
     color: var(--color-main);
     background: var(--color-background);
