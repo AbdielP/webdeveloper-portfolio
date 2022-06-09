@@ -120,13 +120,13 @@ body {
 	}
 
 	.container {
-		width: 90%;
-		max-width: 1200px;
-		margin: 100px auto;
+		width: 70%;
+		max-width: 3500px;
+		margin: 10vh auto;
 	}
 
 	.evento {
-		margin-bottom: 200px;
+		margin-bottom: 28vh;
 	}
 
 	.info {
@@ -136,8 +136,16 @@ body {
 }
 
 @media (min-width: 1200px) {
+	.hero {
+		font-size: 4vh;
+	}
+
+	.small {
+		font-size: 1.5vh;
+	}
+	
 	.info {
-		/* font-size: 3vh; */
-		font-size: 3em;
+		font-size: 3.8vh;
+		/* font-size: 3em; */
 	}
 }
