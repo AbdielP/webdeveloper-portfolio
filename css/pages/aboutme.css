@@ -8,7 +8,8 @@ body {
 	align-items: center;
 	justify-content: center;
 	min-height: 35vh;
-	font-size: 36px;
+	/* font-size: 36px; */
+	font-size: 1.3em;
 	text-transform: uppercase;
 }
 
@@ -18,9 +19,10 @@ body {
 }
 
 .container {
-	width: 90%;
-	max-width: 1200px;
-	margin: 100px auto;
+	/* width: 90%; */
+	/* max-width: 1200px; */
+	/* margin: 100px auto; */
+	margin: 20px;
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -42,7 +44,8 @@ body {
 	display: flex;
 	justify-content: space-between;
     align-items: center;
-	margin-bottom: 200px;
+	/* margin-bottom: 200px; */
+	margin-bottom: 100px;
 	position: relative;
 }
 
@@ -61,11 +64,10 @@ body {
 }
 
 .info {
-	/* display: flex;
-	align-items: center;
-	justify-content: start; */
+	padding: 5px; /*Este padding no lo tenía. podría no ir en tamaños mas grandes*/
 	width: calc(42% + 20px);
-	font-size: 32px;
+	/* font-size: 32px; */
+	font-size: 1em;
 	font-weight: normal;
 }
 
