@@ -2,6 +2,33 @@ body {
     font-family: var(--font-readex);
 }
 
+.header {
+	background: var(--color-secondary);
+	padding: 1.2em;
+}
+
+.nav {
+	margin: auto 1.4em;
+}
+
+.nav__a {
+	font-size: 1.2em;
+	align-items: center;
+	text-decoration: none;
+	color: var(--color-background);
+	border-bottom: 1px solid transparent;
+}
+
+.nav__a:hover {
+	transition: .3s ease-in-out;
+	border-bottom: 1px solid var(--color-background);
+}
+
+.nav__img {
+	width: 1em;
+	margin-right: .2em;
+}
+
 .hero {
 	display: flex;
 	flex-direction: column;
@@ -115,6 +142,23 @@ body {
 }
 
 @media (min-width: 750px) {
+	.header {
+		padding: 1.3vh;
+	}
+
+	.nav {
+		margin: auto 1.4vh;
+	}
+
+	.nav__a {
+		font-size: 2vh;
+	}
+
+	.nav__img {
+		width: 2vh;
+		margin-right: .5vh;
+	}
+
 	.hero {
 		font-size: 3em;
 	}
