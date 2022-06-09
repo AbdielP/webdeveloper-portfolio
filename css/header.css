@@ -23,6 +23,12 @@
     font-family: var(--font-comissioner);
     font-weight: 700;
     font-size: 15px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}.title:hover {
+    color: var(--color-main-light);
+    /* font-size: 1.45em; */
+    transform: scale(1.01);
 }
 
 .subtitle {

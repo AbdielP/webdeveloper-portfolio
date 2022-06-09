@@ -4,11 +4,17 @@ body {
 
 .hero {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	min-height: 35vh;
 	font-size: 36px;
 	text-transform: uppercase;
+}
+
+.small {
+	font-size: initial;
+	font-style: italic;
 }
 
 .container {
