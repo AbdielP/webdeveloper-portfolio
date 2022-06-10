@@ -21,7 +21,8 @@
     --color-secondary: #EF7D3C;
     --color-background: #EFF8FB;
     --color-background-darker: #c2cbce;
-
+    --color-main-filter: invert(15%) sepia(35%) saturate(2611%) hue-rotate(210deg) brightness(92%) contrast(90%);
+    
     --header-height: 50px;
     --header-height-desktop: 3vw;
 }

@@ -92,7 +92,7 @@
   margin-top: 1.2vw;
   border-radius: 50%;
   transition: .8s ease-in-out;
-  filter: invert(15%) sepia(35%) saturate(2611%) hue-rotate(210deg) brightness(92%) contrast(90%);
+  filter: var(--color-main-filter)
 }.link__img:hover {
   transform: scale(1.09);
   filter: invert(25%) sepia(97%) saturate(483%) hue-rotate(194deg) brightness(92%) contrast(96%); 
@@ -147,6 +147,30 @@
     brightness(102%) contrast(84%);
   /* filter: invert(82%) sepia(33%) saturate(391%) hue-rotate(196deg) brightness(106%) contrast(103%); */
   /* filter: invert(65%) sepia(96%) saturate(338%) hue-rotate(357deg) brightness(93%) contrast(93%); */
+}
+
+.link__aboutme {
+  position: relative;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-top: 1.2em;
+  text-decoration: none;
+  color: var(--color-main);
+  font-family: var(--font-comissioner);
+  transition: 0.3s ease-in-out;
+}
+
+.link__aboutme:hover {
+  transform: scale(1.01);
+}
+
+.icon_mouse {
+  filter: var(--color-main-filter);
+  transform: rotate(335deg);
+  position: absolute;
+  top: 6.5px;
+  right: -12px;
+  width: .8em;
 }
 
 @media (min-width: 360px) {
