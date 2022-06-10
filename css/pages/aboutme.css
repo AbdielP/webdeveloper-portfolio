@@ -131,17 +131,24 @@ body {
 }
 
 .list {
-    margin-top: 10px;
-    margin-left: 40px;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.li {
+	align-items: center;
+}
+
+.li__img {
+	/* AQUI!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+	width: 30px; 
 }
 
 .link {
-    /* text-decoration: none; */
     color: var(--color-secondary);
 }
 
 .footer {
-	/* background: red; */
 	margin: 100px auto 30px;
 	justify-content: center;
 }
@@ -212,5 +219,9 @@ body {
 	
 	.info {
 		font-size: 3.8vh;
+	}
+
+	.li__img {
+		width: 4vh;
 	}
 }
