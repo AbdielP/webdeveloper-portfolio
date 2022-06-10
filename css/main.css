@@ -153,7 +153,7 @@
   position: relative;
   font-size: 1.2em;
   font-weight: 600;
-  margin-top: 1.2em;
+  margin-top: 2em;
   text-decoration: none;
   color: var(--color-main);
   font-family: var(--font-comissioner);
@@ -166,10 +166,10 @@
 
 .icon_mouse {
   filter: var(--color-main-filter);
-  transform: rotate(335deg);
+  transform: rotate(340deg);
   position: absolute;
-  top: 6.5px;
-  right: -12px;
+  top: 6px;
+  right: -11px;
   width: .8em;
 }
 
@@ -269,6 +269,17 @@
   .card {
     width: 100%;
     height: 11vw;
+  }
+
+  .link__aboutme {
+    margin-top: 12vh;
+    font-size: 1.8vh;
+  }
+
+  .icon_mouse {
+    width: 1.5vh;
+    /* top: .4em; */
+    right: -0.9em;
   }
 }
 
