@@ -38,6 +38,13 @@
     font-size: 14px;
 }
 
+.a__aboutme {
+    margin-left: 3em;
+    text-decoration: none;
+    color: var(--color-main);
+    font-family: var(--font-comissioner);
+}
+
 @media (min-width: 360px) {
 
     .div__title {
