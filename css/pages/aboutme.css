@@ -86,9 +86,8 @@ body {
 }
 
 .info {
-	padding: 5px; /*Este padding no lo tenía. podría no ir en tamaños mas grandes*/
+	padding: 5px;
 	width: calc(42% + 20px);
-	/* font-size: 32px; */
 	font-size: 1em;
 	font-weight: normal;
 }
@@ -141,6 +140,29 @@ body {
     color: var(--color-secondary);
 }
 
+.footer {
+	/* background: red; */
+	margin: 100px auto 30px;
+	justify-content: center;
+}
+
+.footer__img {
+	width: 1.5em;
+	filter: invert(55%) sepia(88%) saturate(937%) hue-rotate(335deg) brightness(98%) contrast(92%);
+	margin-right: .5em;
+}
+
+.footer__a {
+	font-size: 1.5em;
+	letter-spacing: .03em;
+	text-decoration: none;
+	color: var(--color-secondary);
+}
+
+.footer__a:hover {
+	text-decoration: underline;
+}
+
 @media (min-width: 750px) {
 	.header {
 		padding: 1.3vh;
@@ -190,6 +212,5 @@ body {
 	
 	.info {
 		font-size: 3.8vh;
-		/* font-size: 3em; */
 	}
 }
