@@ -1,6 +1,17 @@
 {
     "projects" : [
         {
+            "desktop_img": "cwb_dashboard.png",
+            "mobile_img": "cwb_dashboard_mobile.png",
+            "title": "Data center web portal",
+            "description" : "It is a web page for customers to verify their services and the people who have current access to their infrastructure in the data center facilities.",
+            "live_site" : "https://datacenter.cwpanama.com/",
+            "github" : "https://github.com/CWB-Datacenter/webpage-idc",
+            "built" : [ "Vue CLI V3@", "Html 5", "CSS3", "NodeJS", "Sequelize" ],
+            "info" : "The idea of this portal is to unify in one place all the access information and services of the data center customers. It was developed by me with Javascript web technologies.",
+            "logos": ["vue.png", "html5.png", "css3.png", "nodejs.png"]
+        },
+        {
             "desktop_img": "room_homepage.png",
             "mobile_img": "room_homepage_mobile.png",
             "title": "Room Homepage",
