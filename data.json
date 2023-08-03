@@ -1,6 +1,17 @@
 {
     "projects" : [
         {
+            "desktop_img": "mk_desktop.png",
+            "mobile_img": "mk_mobile.png",
+            "title": "TALLER MK Webpage",
+            "description" : "Taller MK is an advanced mechanical workshop that seeks to position itself on the internet and social networks. This website is used to show the list of their services to their clients.",
+            "live_site" : "https://tallermk.com/",
+            "github" : "https://github.com/AbdielP/mk-webpage",
+            "built" : [ "React.js", "Html 5", "CSS3" ],
+            "info" : "The website is my own design and was developed with React.js together with CSS.",
+            "logos": ["react.png", "html5.png", "css3.png"]
+        },
+        {
             "desktop_img": "cwb_dashboard.png",
             "mobile_img": "cwb_dashboard_mobile.png",
             "title": "Data center web portal",
@@ -67,17 +78,6 @@
             "logos": ["javascript.png", "html5.png", "css3.png"]
         },
         {
-            "desktop_img": "landing_page.png",
-            "mobile_img": "landing_page_mobile.png",
-            "title": "Huddle landing page with curved sections",
-            "description" : "Practice using pseudo-elements for styling extras and the CSS position property for the sections with curved edges.",
-            "live_site" : "https://abdielp.github.io/curve-landing-page/",
-            "github" : "https://github.com/AbdielP/curve-landing-page",
-            "built" : ["Javascript", "Html 5", "Scss" ],
-            "info" : "A good challenge to practice CSS position property for the sections with curved edges. It implements a little form email validation in Javascript and uses modular pattern design.",
-            "logos": ["javascript.png", "html5.png", "css3.png"]
-        },
-        {
             "desktop_img": "geocoding.png",
             "mobile_img": "geocoding_mobile.png",
             "title": "Leaflet, Mapbox geocoding map",
@@ -109,6 +109,17 @@
             "built" : ["Angular", "Angular Material", "Html5", "CSS3", "NodeJS" ],
             "info" : "A private application made to make the register and access process to a datacenter easier. It also have a section to generate QR codes for tagging cargo.",
             "logos": ["angular.png", "html5.png", "css3.png", "nodejs.png"]
+        },
+        {
+            "desktop_img": "landing_page.png",
+            "mobile_img": "landing_page_mobile.png",
+            "title": "Huddle landing page with curved sections",
+            "description" : "Practice using pseudo-elements for styling extras and the CSS position property for the sections with curved edges.",
+            "live_site" : "https://abdielp.github.io/curve-landing-page/",
+            "github" : "https://github.com/AbdielP/curve-landing-page",
+            "built" : ["Javascript", "Html 5", "Scss" ],
+            "info" : "A good challenge to practice CSS position property for the sections with curved edges. It implements a little form email validation in Javascript and uses modular pattern design.",
+            "logos": ["javascript.png", "html5.png", "css3.png"]
         },
         {
             "desktop_img": "pinglanding.png",
